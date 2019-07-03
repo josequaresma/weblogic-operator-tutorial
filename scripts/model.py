@@ -89,11 +89,11 @@ assign('JDBCSystemResource', dsname, 'Target', cluster_name)
 
 # Deploy application
 # ==========================
-cd("/")
-dep=create("testwebapp", "AppDeployment")
-dep.setTargets(jarray.array([cl],TargetMBean))
-dep.setModuleType("war")
-dep.setSourcePath("wlsdeploy/applications/opdemo.war")
+#cd("/")
+#dep=create("testwebapp", "AppDeployment")
+#dep.setTargets(jarray.array([cl],TargetMBean))
+#dep.setModuleType("war")
+#dep.setSourcePath("wlsdeploy/applications/opdemo.war")
 
 writeDomain(domain_path)
 closeTemplate()
